@@ -19,7 +19,9 @@ ctrl = ModelController()
 ### My UI starting here
 
 with st.form(key="my_form"):
-
+    
+    st.title("Clasificador de Textos - Objetivos de Desarrollo Sostenible")
+    
     uploaded_file = st.file_uploader(
         "Choose a CSV file", accept_multiple_files=False, type="csv"
     )
