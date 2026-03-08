@@ -67,7 +67,7 @@ if input_df is not None:
         col1, col2 = st.columns([0.6, 0.4])  
 
         #ODS_real = Y[current_row_index]
-        ODS_real = Y[current_row_index] if (Y[current_row_index] is not Null) else "No aplica"
+        ODS_real = Y[current_row_index] if (Y[current_row_index] is not None) else "No aplica"
         ODS_pred= Y_pred[current_row_index]
         proba= max(probabilidades[current_row_index])
 
