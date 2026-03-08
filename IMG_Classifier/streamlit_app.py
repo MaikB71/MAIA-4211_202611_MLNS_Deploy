@@ -51,7 +51,7 @@ if input_df is not None:
         #TO-DO: Obten el nombre de las clases
         class_names = ctrl.get_categories()
 
-        col1, col2 = st.columns([2, 1])  
+        col1, col2 = st.columns([0.7, 0.3])  
 
         with col1:
             st.caption("🗣 Analyzed text")
