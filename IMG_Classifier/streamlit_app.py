@@ -47,9 +47,9 @@ if input_df is not None:
         current_row = input_df.iloc[current_row_index]
 
         #TO-DO: Llama la clase de predicción para procesar la información
-        X, Y, Y_pred = None
+        X, Y, Y_pred,probabilidades = ctrl.predict(input_df)
         #TO-DO: Obten el nombre de las clases
-        class_names = None
+        class_names = ctrl.get_categories()
 
         col1, col2 = st.columns([1, 2])  
 
