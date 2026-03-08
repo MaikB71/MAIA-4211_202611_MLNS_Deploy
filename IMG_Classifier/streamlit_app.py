@@ -19,6 +19,7 @@ ctrl = ModelController()
 ### My UI starting here
 st.title("Clasificador de Textos")
 st.header("Objetivos de Desarrollo Sostenible")
+st.subheader("Realizado por: Michael Bustos")  # Subheader
 st.markdown("""
 **📌 Funcionalidades de la aplicación**
 
