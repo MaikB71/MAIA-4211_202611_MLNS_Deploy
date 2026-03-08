@@ -66,6 +66,11 @@ if input_df is not None:
 
         col1, col2 = st.columns([0.6, 0.4])  
 
+        #ODS_real = Y[current_row_index]
+        ODS_real = Y[current_row_index] if (Y[current_row_index] is not None) else "No aplica"
+        ODS_pred= Y_pred[current_row_index]
+        proba= max(probabilidades[current_row_index])
+
         with col1:
             st.caption("🗣 Analyzed text")
             #TO-DO
@@ -75,7 +80,7 @@ if input_df is not None:
             st.caption("🎯 Your results")
             #TO-DO
             st.metric("Real:"," ")
-            st.success(f"ODS {Y[current_row_index]}")
+            st.success(f"ODS {ODS_real}")
             st.metric("Prediction:", " ")
-            st.success(f"ODS {Y_pred[current_row_index]}")
-            st.metric("Confianza", f"{max(probabilidades[current_row_index]):.2%}")
+            st.success(f"ODS {ODS_pred}")
+            st.metric("Confianza", f"{proba:.2%}")
