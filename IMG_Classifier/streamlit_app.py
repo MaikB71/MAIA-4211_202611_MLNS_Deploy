@@ -60,5 +60,5 @@ if input_df is not None:
         with col2:
             st.caption("🎯 Your results")
             #TO-DO
-            st.metric("Real", "<Insert Value>")
-            st.metric("Prediction", "<Insert Value>")
+            st.metric("Real", Y)
+            st.metric("Prediction", Y_pred)
