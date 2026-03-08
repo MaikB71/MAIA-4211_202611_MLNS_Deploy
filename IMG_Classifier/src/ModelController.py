@@ -6,6 +6,7 @@ import pandas as pd
 from io import StringIO
 
 #TO-DO. Importar la libreria joblib
+import joblib
 from src.DataPreprocessing import DataPreprocessing
 
 class ModelController:
