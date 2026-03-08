@@ -17,7 +17,7 @@ st.set_page_config(
 ctrl = ModelController()
 
 ### My UI starting here
-st.title("Clasificador de Textos - Objetivos de Desarrollo Sostenible")
+st.header("Clasificador de Textos - Objetivos de Desarrollo Sostenible")
 st.markdown("""
 **📌 ¿Qué hace esta aplicación?**
 - Carga archivos CSV con textos relacionados a ODS
