@@ -9,7 +9,7 @@ from src.ModelController import ModelController
 ### Setup and configuration
 
 st.set_page_config(
-    layout="centered", page_title="Image Classifier", page_icon="❄️"
+    layout="centered", page_title="Clasificador de Textos ODS", page_icon="❄️"
 )
 
 ### My vars
@@ -17,10 +17,11 @@ st.set_page_config(
 ctrl = ModelController()
 
 ### My UI starting here
+st.title("Clasificador de Textos - Objetivos de Desarrollo Sostenible")
 
 with st.form(key="my_form"):
     
-    st.title("Clasificador de Textos - Objetivos de Desarrollo Sostenible")
+    
     
     uploaded_file = st.file_uploader(
         "Choose a CSV file", accept_multiple_files=False, type="csv"
