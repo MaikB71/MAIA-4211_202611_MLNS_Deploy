@@ -22,7 +22,7 @@ class ModelController:
         #TO-DO: Cargar los modelos
         self.pca = None
         self.scaler = None
-        self.model = None
+        self.model = self.model_path
 
         # Inicializar variables
         self.input_df = ""
@@ -35,7 +35,7 @@ class ModelController:
     
     def get_categories(self):
         print("ModelController.get_categories ->")
-        return ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']    
+        return [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]    
 
     def load_input_data(self, input_data):
         print("ModelController.load_input_data ->")
