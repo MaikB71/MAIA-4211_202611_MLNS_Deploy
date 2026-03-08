@@ -24,8 +24,8 @@ st.markdown("""
 
 - **Carga de archivos:** Permite subir archivos CSV con formato específico (separador: punto y coma). 
     Estructura requerida: 
-    * columna "ODS" (valor real) y columna "textos" (contenido a clasificar). 
-    * La columna "ODS" es necesaria para el correcto funcionamiento, pero su contenido es opcional (Puede estar vacia).
+    * Columna "ODS" (valor real) y columna "textos" (contenido a clasificar). 
+    * La columna "ODS" es necesaria para el correcto funcionamiento, pero su contenido es opcional (puede estar vacia).
 
 - **Clasificación mediante ML:** Utiliza un modelo entrenado de Machine Learning para predecir automáticamente el Objetivo de Desarrollo Sostenible asociado a cada texto.
 
