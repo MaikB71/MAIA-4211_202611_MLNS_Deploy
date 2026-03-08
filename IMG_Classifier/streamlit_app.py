@@ -65,4 +65,4 @@ if input_df is not None:
             st.success(f"ODS {Y[current_row_index]}")
             st.metric("Prediction:", " ")
             st.success(f"ODS {Y_pred[current_row_index]}")
-            st.metric("Confianza", f"{probabilidades[current_row_index]}")
+            st.metric("Confianza", f"{max(probabilidades[current_row_index])}")
