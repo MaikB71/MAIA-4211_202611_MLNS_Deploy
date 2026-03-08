@@ -79,8 +79,13 @@ if input_df is not None:
         with col2:
             st.caption("🎯 Your results")
             #TO-DO
-            st.metric("Real:"," ")
-            st.success(f"ODS {ODS_real}")
-            st.metric("Prediction:", " ")
-            st.success(f"ODS {ODS_pred}")
-            st.metric("Confianza", f"{proba:.2%}")
+            if ODS_real != "No aplica":
+                st.metric("Real:"," ")
+                st.success(f"ODS {ODS_real}")
+                st.metric("Prediction:", " ")
+                st.success(f"ODS {ODS_pred}")
+                st.metric("Confianza", f"{proba:.2%}")
+            else: 
+                st.metric("Prediction:", " ")
+                st.success(f"ODS {ODS_pred}")
+                st.metric("Confianza", f"{proba:.2%}")
