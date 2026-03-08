@@ -22,7 +22,8 @@ class ModelController:
         #TO-DO: Cargar los modelos
         self.pca = None
         self.scaler = None
-        self.model = self.model_path
+        self.model_guardado = joblib.load(self.modelo_path)
+        self.model= self.modelo_guardado['pipeline']
 
         # Inicializar variables
         self.input_df = ""
