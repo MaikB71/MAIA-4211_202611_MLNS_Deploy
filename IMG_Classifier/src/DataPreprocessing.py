@@ -14,7 +14,7 @@ class DataPreprocessing:
     def get_columns(self):
         print("DataPreprocessing.get_columns ->")
         #TO-DO: Genera los nombres de las columnas en una lista para la variable res
-        res = []
+        res = ["ODS","textos"]
 
         return set(res)
 
