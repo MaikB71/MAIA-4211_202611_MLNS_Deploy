@@ -15,8 +15,8 @@ class ModelController:
         # Asegura en una variable la ruta de los modelos
         self.model_path = osp.join(Definitions.ROOT_DIR, "resources/models")
         # Almacena la ruta de cada modelo en una variable        
-        self.pca_path = osp.join(self.model_path, "pca.joblib")
-        self.scaler_path = osp.join(self.model_path, "scaler.joblib")
+        ##self.pca_path = osp.join(self.model_path, "pca.joblib")
+        ##self.scaler_path = osp.join(self.model_path, "scaler.joblib")
         self.model_path = osp.join(self.model_path, "model.joblib")
 
         #TO-DO: Cargar los modelos
@@ -50,14 +50,15 @@ class ModelController:
 
     def predict(self, data):
         print("ModelController.predict ->")
-        X = data[1:].to_numpy()
-        Y = data.iloc[0]
+        X = data["textos"]
+        Y = data["ODS"]
         #TO-DO: Escala los datos
-        X_scaled = None
+        ##X_scaled = None
         #TO-DO: Reduce los datos
-        X_reduced = None
+        ##X_reduced = None
         #TO-DO: Genera la predicción
-        y_pred = None
+        y_pred = self.model.predict(X)
+        probabilidades = self.model.predict_proba(X)
         
-        return X, Y, y_pred
+        return X, Y, y_pred,probabilidades
 
