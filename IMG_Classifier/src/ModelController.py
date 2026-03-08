@@ -41,7 +41,7 @@ class ModelController:
         print("ModelController.load_input_data ->")
         try:
             input_data_str = StringIO(input_data.getvalue().decode("utf-8"))
-            self.input_df = pd.read_csv(input_data_str)
+            self.input_df = pd.read_csv(input_data_str, sep=";")
             is_valid = self.validate_data(self.input_df)
             return self.input_df, is_valid
 
