@@ -17,12 +17,16 @@ st.set_page_config(
 ctrl = ModelController()
 
 ### My UI starting here
-st.header("Clasificador de Textos - Objetivos de Desarrollo Sostenible")
+st.title("Clasificador de Textos")
+st.header("Objetivos de Desarrollo Sostenible")
 st.markdown("""
-**📌 ¿Qué hace esta aplicación?**
-- Carga archivos CSV con textos relacionados a ODS
-- Utiliza un modelo de ML entrenado para clasificar automáticamente los textos
-- Visualiza resultados y estadísticas de clasificación
+**📌 Funcionalidades de la aplicación**
+
+- **Carga de archivos:** Permite subir archivos CSV con formato específico (separador: punto y coma). Estructura requerida: columna "ODS" (valor real) y columna "textos" (contenido a clasificar).
+
+- **Clasificación mediante ML:** Utiliza un modelo entrenado de Machine Learning para predecir automáticamente el Objetivo de Desarrollo Sostenible asociado a cada texto.
+
+- **Visualización interactiva:** Muestra los resultados de clasificación de manera clara, permitiendo comparar predicciones con valores reales.
 """)
 
 with st.form(key="my_form"):
