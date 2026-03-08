@@ -18,7 +18,7 @@ ctrl = ModelController()
 
 ### My UI starting here
 st.title("Clasificador de Textos - Objetivos de Desarrollo Sostenible")
-st.info("""
+st.markdown("""
 **📌 ¿Qué hace esta aplicación?**
 - Carga archivos CSV con textos relacionados a ODS
 - Utiliza un modelo de ML entrenado para clasificar automáticamente los textos
