@@ -62,6 +62,6 @@ if input_df is not None:
             st.caption("🎯 Your results")
             #TO-DO
             st.metric("Real:"," ")
-            st.success(f"ODS: {Y[current_row_index]}")
+            st.success(f"ODS {Y[current_row_index]}")
             st.metric("Prediction:", " ")
-            st.success(f"ODS: {Y_pred[current_row_index]}")
+            st.success(f"ODS {Y_pred[current_row_index]}")
