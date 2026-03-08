@@ -56,7 +56,7 @@ if input_df is not None:
         with col1:
             st.caption("🗣 Your Prediction")
             #TO-DO
-            st.write("**Texto analizado:**")
+            #st.write("**Texto analizado:**")
             st.info(current_row['textos'])
 
         with col2:
