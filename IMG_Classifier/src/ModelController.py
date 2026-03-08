@@ -17,7 +17,7 @@ class ModelController:
         # Almacena la ruta de cada modelo en una variable        
         ##self.pca_path = osp.join(self.model_path, "pca.joblib")
         ##self.scaler_path = osp.join(self.model_path, "scaler.joblib")
-        self.model_path = osp.join(self.model_path, "model.joblib")
+        self.model_path = osp.join(self.model_path, "modelo_ods_con_reduccion.joblib")
 
         #TO-DO: Cargar los modelos
         self.pca = None
