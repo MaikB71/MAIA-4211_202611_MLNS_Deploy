@@ -23,12 +23,13 @@ st.markdown("""
 **📌 Funcionalidades de la aplicación**
 
 - **Carga de archivos:** Permite subir archivos CSV con formato específico (separador: punto y coma). 
-    Estructura requerida: columna "ODS" (valor real) y columna "textos" (contenido a clasificar). 
-                          La columna "ODS" es necesaria para el correcto funcionamiento, pero su contenido es opcional (Puede estar vacia).
+    Estructura requerida: 
+    * columna "ODS" (valor real) y columna "textos" (contenido a clasificar). 
+    * La columna "ODS" es necesaria para el correcto funcionamiento, pero su contenido es opcional (Puede estar vacia).
 
 - **Clasificación mediante ML:** Utiliza un modelo entrenado de Machine Learning para predecir automáticamente el Objetivo de Desarrollo Sostenible asociado a cada texto.
 
-- **Visualización interactiva:** Muestra los resultados de clasificación de manera clara, permitiendo comparar predicciones con valores reales.
+- **Visualización:** Muestra los resultados de clasificación de manera clara, permitiendo comparar predicciones con valores reales cuando estan disponibles.
 """)
 
 with st.form(key="my_form"):
